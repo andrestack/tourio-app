@@ -29,8 +29,6 @@ export default function Form({ onSubmit, formName, defaultData }) {
   const router = useRouter()
   function handleSubmit(event) {
     event.preventDefault();
-    // const formData = new FormData(event.target);
-    // const data = Object.fromEntries(formData);
     onSubmit(event);
   }
 
