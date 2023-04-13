@@ -16,18 +16,9 @@ export default async function handler(request, response) {
       });
       response.status(200).json(locationToUpdate);
       break;
-    // case "POST":
-    //   try {
-    //     const locationData = request.body;
-    //     const location = new Location(locationData);
-    //     await location.save();
-    //     response.status(201).json({ status: "product created" });
-    //   } catch (e) {
-    //     console.error(e);
-    //     response.status(400).json({ error: e.message });
-    //   }
-    //   break;
-
+    case "DELETE":
+      const locationToDelete = await Location.findByIdAndDelete(id);
+      response.status(200).json(locationToDelete);
     default:
       return response.status(404).json({ status: "Not found" });
   }
