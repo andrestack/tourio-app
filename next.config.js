@@ -22,7 +22,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.spiced-academy.com",
+        hostname: "**",
         port: "",
       },
     ],
