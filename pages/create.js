@@ -31,10 +31,8 @@ export default  function CreatePlacePage() {
     if (response.ok) {
       locations.mutate();
       event.target.reset();
-      // push("/");
     } else {
       console.error(response.status);
-    // console.log('Place added (but not really...)');
     }
   }
 

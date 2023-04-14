@@ -20,11 +20,11 @@ const nextConfig = {
         hostname: "images.unsplash.com",
         port: "",
       },
-      // {
-      //   protocol: "https",
-      //   hostname: "spiced-academy.com",
-      //   port: "",
-      // },
+      {
+        protocol: "https",
+        hostname: "**",
+        port: "",
+      },
     ],
   },
 };
